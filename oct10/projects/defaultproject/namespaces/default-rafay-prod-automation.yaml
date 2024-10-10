@@ -1,0 +1,75 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  name: default-rafay-prod-automation
+  project: defaultproject
+spec:
+  limitRange:
+    container: {}
+    pod: {}
+  namespaceMeshPolicyParams: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: rauto-cluster-onprem
+    - key: rafay.dev/clusterName
+      value: rauto-cluster-eks
+    - key: rafay.dev/clusterName
+      value: qc-staging-automation-mks-ec2
+    - key: rafay.dev/clusterName
+      value: rauto-eks-708821414
+    - key: rafay.dev/clusterName
+      value: rauto-eks-824172232
+    - key: rafay.dev/clusterName
+      value: automation-cluster-onprem-qc
+    - key: rafay.dev/clusterName
+      value: automation-cluster-mks-qc
+    - key: rafay.dev/clusterName
+      value: rauto-platform-test-onprem-cluster
+    - key: rafay.dev/clusterName
+      value: automation-cluster-eks-qc
+    - key: rafay.dev/clusterName
+      value: automation-cluster-eks125-qc
+    - key: rafay.dev/clusterName
+      value: automation-cluster-eks126-qc
+    - key: rafay.dev/clusterName
+      value: automation-cluster-eks129-qc
+    - key: rafay.dev/clusterName
+      value: terraform-automation-eks-cluster-qc
+    - key: rafay.dev/clusterName
+      value: rauto-terraform-aks-480149419
+    - key: rafay.dev/clusterName
+      value: rauto-terraform-aks-594852441
+    - key: rafay.dev/clusterName
+      value: rauto-terraform-aks-534046927
+    - key: rafay.dev/clusterName
+      value: rauto-terraform-eks-11951908
+    - key: rafay.dev/clusterName
+      value: rauto-terraform-aks-453221922
+    - key: rafay.dev/clusterName
+      value: rauto-tf-aksv3-554592
+    - key: rafay.dev/clusterName
+      value: rauto-terraform-eks-189802750
+    - key: rafay.dev/clusterName
+      value: rauto-terraform-aks-797055066
+    - key: rafay.dev/clusterName
+      value: rauto-terraform-eks-18124243
+    - key: rafay.dev/clusterName
+      value: rauto-terraform-aks-192235046
+    - key: rafay.dev/clusterName
+      value: rauto-terraform-aks-245366482
+    - key: rafay.dev/clusterName
+      value: rauto-tf-aksv3-740010
+    - key: rafay.dev/clusterName
+      value: rauto-tf-aksv3-678668
+    - key: rafay.dev/clusterName
+      value: rauto-terraform-aks-129305065
+    - key: rafay.dev/clusterName
+      value: rauto-tf-aksv3-604121
+    - key: rafay.dev/clusterName
+      value: rauto-terraform-aks-963124477
+    - key: rafay.dev/clusterName
+      value: rauto-terraform-eks-729208411
+    - key: rafay.dev/clusterName
+      value: rauto-terraform-eks-102475577
+  resourceQuotas: {}

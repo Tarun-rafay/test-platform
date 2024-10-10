@@ -1,0 +1,14 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  name: ns-264456709
+  project: defaultproject
+spec:
+  limitRange: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: automation-cluster-eks-v129qc
+    - key: rafay.dev/clusterName
+      value: automation-cluster-onprem-qc
+  resourceQuotas: {}

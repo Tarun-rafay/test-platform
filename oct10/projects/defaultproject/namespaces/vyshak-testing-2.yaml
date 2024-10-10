@@ -1,0 +1,20 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  name: vyshak-testing-2
+  project: defaultproject
+spec:
+  artifact:
+    path:
+      name: file://vyshak-testing-2/vyshak-testing-2.yaml
+  limitRange:
+    container: {}
+    pod: {}
+  namespaceMeshPolicyParams: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: rauto-ocicentos-153787279
+    - key: rafay.dev/clusterName
+      value: vyshak-mks-test3
+  resourceQuotas: {}

@@ -1,0 +1,31 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  name: rauto-bootstrap-ns-198
+  project: defaultproject
+spec:
+  limitRange:
+    container: {}
+    pod: {}
+  namespaceMeshPolicyParams: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: automation-cluster-eks-qc
+    - key: rafay.dev/clusterName
+      value: automation-cluster-mks-qc
+    - key: rafay.dev/clusterName
+      value: automation-cluster-onprem-qc
+    - key: rafay.dev/clusterName
+      value: qc-staging-automation-mks-ec2
+    - key: rafay.dev/clusterName
+      value: rauto-platform-test-onprem-cluster
+    - key: rafay.dev/clusterName
+      value: automation-cluster-eks125-qc
+    - key: rafay.dev/clusterName
+      value: automation-cluster-eks126-qc
+    - key: rafay.dev/clusterName
+      value: automation-cluster-eks129-qc
+    - key: rafay.dev/clusterName
+      value: automation-cluster-eks-v129qc
+  resourceQuotas: {}
