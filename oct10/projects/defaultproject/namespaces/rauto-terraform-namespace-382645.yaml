@@ -1,9 +1,7 @@
 apiVersion: infra.k8smgmt.io/v3
 kind: Namespace
 metadata:
-  annotations:
-    rafay.dev/description: ""
-  name: rauto-namespace-88439
+  name: rauto-terraform-namespace-382645
   project: defaultproject
 spec:
   limitRange: {}
@@ -11,5 +9,5 @@ spec:
   placement:
     labels:
     - key: rafay.dev/clusterName
-      value: rauto-k3d-29673
+      value: automation-cluster-onprem-qc
   resourceQuotas: {}
