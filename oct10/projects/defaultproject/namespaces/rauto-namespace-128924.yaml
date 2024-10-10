@@ -4,7 +4,7 @@ metadata:
   annotations:
     a1: v3
     a2: v4
-  name: namespacerauto-779205635
+  name: rauto-namespace-128924
   project: defaultproject
 spec:
   limitRange: {}
