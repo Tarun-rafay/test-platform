@@ -1,0 +1,14 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  name: rauto-ns-65865
+  project: defaultproject
+spec:
+  artifact:
+    path:
+      name: file://rauto-ns-65865/rauto-ns-65865.yaml
+  namespaceMeshPolicyParams: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: automation-cluster-onprem-qc
