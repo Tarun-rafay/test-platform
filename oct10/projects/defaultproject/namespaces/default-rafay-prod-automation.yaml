@@ -74,4 +74,6 @@ spec:
       value: rauto-terraform-eks-729208411
     - key: rafay.dev/clusterName
       value: rauto-terraform-eks-102475577
+    - key: rafay.dev/clusterName
+      value: rauto-terraform-aks-839484767
   resourceQuotas: {}
