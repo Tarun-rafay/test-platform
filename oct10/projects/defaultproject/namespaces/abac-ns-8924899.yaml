@@ -5,8 +5,11 @@ metadata:
   project: defaultproject
 spec:
   limitRange: {}
+  namespaceMeshPolicyParams: {}
   placement:
     labels:
     - key: rafay.dev/clusterName
       value: rauto-eks-82275928
+    - key: rafay.dev/clusterName
+      value: rauto-aks-222153592
   resourceQuotas: {}
