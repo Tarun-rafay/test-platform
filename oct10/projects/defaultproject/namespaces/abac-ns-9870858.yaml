@@ -1,0 +1,15 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  name: abac-ns-9870858
+  project: defaultproject
+spec:
+  limitRange: {}
+  namespaceMeshPolicyParams: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: rauto-eks-82275928
+    - key: rafay.dev/clusterName
+      value: rauto-aks-222153592
+  resourceQuotas: {}
