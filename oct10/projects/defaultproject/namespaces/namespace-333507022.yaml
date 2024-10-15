@@ -1,0 +1,12 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  name: namespace-333507022
+  project: defaultproject
+spec:
+  limitRange: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: rauto-hacluster-839612380
+  resourceQuotas: {}
