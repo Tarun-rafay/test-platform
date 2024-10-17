@@ -1,0 +1,18 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  name: rauto-nps-87270
+  project: defaultproject
+spec:
+  limitRange: {}
+  namespaceMeshPolicyParams: {}
+  networkPolicyParams:
+    networkPolicyEnabled: true
+    policies:
+    - name: rauto-network-policy-87270
+      version: v1.1
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: rauto-eks-558575408
+  resourceQuotas: {}
