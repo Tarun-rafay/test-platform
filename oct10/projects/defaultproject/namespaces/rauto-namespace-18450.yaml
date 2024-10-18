@@ -1,0 +1,15 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  labels:
+    rauto-label: rauto-test
+  name: rauto-namespace-18450
+  project: defaultproject
+spec:
+  limitRange: {}
+  namespaceMeshPolicyParams: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: automation-cluster-onprem-qc
+  resourceQuotas: {}
