@@ -1,0 +1,17 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  labels:
+    k8smgmt.io/project: defaultproject
+    kubernetes.io/metadata.name: rauto-namespace-30556
+  name: rauto-namespace-30556
+  project: defaultproject
+spec:
+  drift:
+    action: Deny
+    enabled: true
+  namespaceMeshPolicyParams: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: rauto-k3d-27635
