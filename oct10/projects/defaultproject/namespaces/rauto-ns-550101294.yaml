@@ -1,7 +1,7 @@
 apiVersion: infra.k8smgmt.io/v3
 kind: Namespace
 metadata:
-  name: rauto-ns-970264480
+  name: rauto-ns-550101294
   project: defaultproject
 spec:
   limitRange: {}
