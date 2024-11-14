@@ -4,7 +4,7 @@ metadata:
   annotations:
     a1: v3
     a2: v4
-  name: namespacerauto-978547694
+  name: namespacerauto-300940606
   project: defaultproject
 spec:
   limitRange: {}
@@ -13,5 +13,4 @@ spec:
   placement:
     labels:
     - key: rafay.dev/clusterName
-      value: automation-cluster-onprem-qc
   resourceQuotas: {}
