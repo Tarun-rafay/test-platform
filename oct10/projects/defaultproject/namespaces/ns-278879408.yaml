@@ -1,7 +1,7 @@
 apiVersion: infra.k8smgmt.io/v3
 kind: Namespace
 metadata:
-  name: ns-759549438
+  name: ns-278879408
   project: defaultproject
 spec:
   limitRange: {}
