@@ -5,8 +5,11 @@ metadata:
   project: defaultproject
 spec:
   limitRange: {}
+  namespaceMeshPolicyParams: {}
   placement:
     labels:
     - key: rafay.dev/clusterName
       value: automation-cluster-onprem-qc
+    - key: rafay.dev/clusterName
+      value: rauto-k3d-24859
   resourceQuotas: {}
