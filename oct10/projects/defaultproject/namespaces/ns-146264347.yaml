@@ -1,12 +1,12 @@
 apiVersion: infra.k8smgmt.io/v3
 kind: Namespace
 metadata:
-  name: rauto-ns-72074
+  name: ns-146264347
   project: defaultproject
 spec:
   limitRange: {}
   placement:
     labels:
     - key: rafay.dev/clusterName
-      value: rauto-k3d-39706
+      value: automation-cluster-onprem-qc
   resourceQuotas: {}
