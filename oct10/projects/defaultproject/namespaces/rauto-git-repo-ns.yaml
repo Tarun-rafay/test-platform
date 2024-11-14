@@ -1,0 +1,15 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  name: rauto-git-repo-ns
+  project: defaultproject
+spec:
+  artifact:
+    path:
+      name: workloads/native_yaml/namespace_yaml/repo-ns.yaml
+    repository: rauto-git-repo
+    revision: master
+  placement:
+    labels:
+    - key: rautons
+      value: gittest7352
