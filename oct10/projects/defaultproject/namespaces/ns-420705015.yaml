@@ -1,12 +1,12 @@
 apiVersion: infra.k8smgmt.io/v3
 kind: Namespace
 metadata:
-  name: ns-ovr-364257618
+  name: ns-420705015
   project: defaultproject
 spec:
   limitRange: {}
   placement:
     labels:
     - key: rafay.dev/clusterName
-      value: rauto-eks-659207471
+      value: rauto-eks-308635095
   resourceQuotas: {}
