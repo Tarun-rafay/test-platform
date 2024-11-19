@@ -1,17 +1,12 @@
 apiVersion: infra.k8smgmt.io/v3
 kind: Namespace
 metadata:
-  annotations:
-    a1: v3
-    a2: v4
-  name: namespacerauto-794317879
+  name: ns-ovr-832471581
   project: defaultproject
 spec:
   limitRange: {}
-  namespaceMeshPolicyParams: {}
-  networkPolicyParams: {}
   placement:
     labels:
     - key: rafay.dev/clusterName
-      value: automation-cluster-onprem-qc
+      value: rauto-eks-187398830
   resourceQuotas: {}
