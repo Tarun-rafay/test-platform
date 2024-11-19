@@ -1,9 +1,7 @@
 apiVersion: infra.k8smgmt.io/v3
 kind: Namespace
 metadata:
-  labels:
-    rauto-label: rauto-test
-  name: rauto-namespace-894736
+  name: rauto-terraform-namespace-81406
   project: defaultproject
 spec:
   limitRange: {}
