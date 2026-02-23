@@ -1,0 +1,18 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: AddonOverride
+metadata:
+  labels:
+    rafay.dev/overrideScope: clusterLabels
+    rafay.dev/overrideType: manifestsFile
+  name: test-exist
+  project: defaultproject
+spec:
+  placement:
+    selector: test:label
+  resource:
+    selector:
+      name: watcher
+    type: Addon
+  type: Yaml
+  valuesPath:
+    name: file://test-exist/test-exist.yaml

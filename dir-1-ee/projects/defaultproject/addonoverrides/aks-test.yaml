@@ -1,0 +1,20 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: AddonOverride
+metadata:
+  labels:
+    rafay.dev/overrideScope: clusterLabels
+    rafay.dev/overrideType: valuesFile
+  name: aks-test
+  project: defaultproject
+spec:
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: ankit-alerts
+  resource:
+    selector:
+      name: test2
+    type: Addon
+  type: Helm
+  valuesPath:
+    name: file://aks-test/aks-test.yaml

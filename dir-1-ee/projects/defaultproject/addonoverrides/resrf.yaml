@@ -1,0 +1,14 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: AddonOverride
+metadata:
+  labels:
+    rafay.dev/overrideScope: clusterLabels
+    rafay.dev/overrideType: valuesFile
+  name: resrf
+  project: defaultproject
+spec:
+  resource:
+    type: Addon
+  type: Helm
+  valuesPath:
+    name: file://resrf/resrf.yaml

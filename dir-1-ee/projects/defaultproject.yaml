@@ -1,0 +1,19 @@
+apiVersion: system.k8smgmt.io/v3
+kind: Project
+metadata:
+  name: defaultproject
+spec:
+  clusterResourceQuota:
+    ephemeralStorageLimits: 2048Mi
+    ephemeralStorageRequests: 2048Mi
+    pods: "2000"
+  default: true
+  defaultClusterNamespaceQuota:
+    ephemeralStorageLimits: 10Mi
+    ephemeralStorageRequests: 6Mi
+    pods: "13"
+  driftWebhook:
+    enabled: true
+  profileQuota:
+    vm-test-sit:
+      maxInstances: "100"

@@ -1,0 +1,19 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: AddonOverride
+metadata:
+  labels:
+    rafay.dev/overrideScope: clusterLabels
+    rafay.dev/overrideType: valuesFile
+  name: edge-client-override1
+  project: defaultproject
+spec:
+  placement:
+    labels:
+    - key: demokey1
+  resource:
+    selector:
+      selector: rafay.dev/system=true,rafay.dev/component=v2-edge-client
+    type: Addon
+  type: Helm
+  valuesPath:
+    name: file://edge-client-override1/edge-client-override1.yaml

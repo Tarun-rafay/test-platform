@@ -1,0 +1,18 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: AddonOverride
+metadata:
+  labels:
+    rafay.dev/overrideScope: clusterLabels
+    rafay.dev/overrideType: manifestsFile
+  name: testing
+  project: defaultproject
+spec:
+  placement:
+    selector: label:eks
+  resource:
+    selector:
+      selector: nvidia.gpu/hda1
+    type: Addon
+  type: Yaml
+  valuesPath:
+    name: file://testing/testing.yaml

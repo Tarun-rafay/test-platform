@@ -1,0 +1,14 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: AddonOverride
+metadata:
+  labels:
+    rafay.dev/overrideScope: clusterLabels
+    rafay.dev/overrideType: manifestsFile
+  name: nik
+  project: defaultproject
+spec:
+  resource:
+    type: Addon
+  type: Yaml
+  valuesPath:
+    name: file://nik/nik.yaml

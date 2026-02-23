@@ -1,0 +1,22 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: AddonOverride
+metadata:
+  labels:
+    rafay.dev/overrideScope: clusterLabels
+    rafay.dev/overrideType: valuesFile
+  name: test4
+  project: defaultproject
+spec:
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: test12s
+    - key: rafay.dev/clusterName
+      value: ap-up-grade
+  resource:
+    selector:
+      name: test111
+    type: Addon
+  type: Helm
+  valuesPath:
+    name: file://test4/test4.yaml
