@@ -1,0 +1,20 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: AddonOverride
+metadata:
+  labels:
+    rafay.dev/overrideScope: clusterLabels
+    rafay.dev/overrideType: valuesFile
+  name: disney-feb6
+  project: defaultproject
+spec:
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: disneyc1
+    - key: rafay.dev/clusterName
+      value: disneyc2
+  resource:
+    type: Addon
+  type: Helm
+  valuesPath:
+    name: file://disney-feb6/disney-feb6.yaml
