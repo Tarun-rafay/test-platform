@@ -4,7 +4,7 @@ metadata:
   labels:
     rafay.dev/overrideScope: clusterLabels
     rafay.dev/overrideType: valuesFile
-  name: v2-feb23co1
+  name: v2-feb23co2
   project: defaultproject
 spec:
   placement:
