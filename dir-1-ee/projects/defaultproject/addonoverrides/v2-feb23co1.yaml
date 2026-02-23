@@ -1,0 +1,20 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Override
+metadata:
+  labels:
+    rafay.dev/overrideScope: clusterLabels
+    rafay.dev/overrideType: valuesFile
+  name: v2-feb23co1
+  project: defaultproject
+spec:
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: ankit-qc1
+  resource:
+    selector:
+      name: a1
+    type: Addon
+  type: Helm
+  valuesPath:
+    name: file://v1-feb23co1/v1-feb23co1.yaml
