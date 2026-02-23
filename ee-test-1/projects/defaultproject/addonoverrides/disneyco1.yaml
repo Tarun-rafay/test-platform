@@ -15,10 +15,6 @@ spec:
       value: disneyc2
   resource:
     type: Addon
-  sharing:
-    enabled: true
-    projects:
-    - name: feb-proj-1
   type: Helm
   valuesPath:
     name: file://disneyco1/disneyco1.yaml
