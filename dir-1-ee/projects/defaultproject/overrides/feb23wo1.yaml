@@ -11,6 +11,11 @@ spec:
     labels:
     - key: rafay.dev/clusterName
       value: ankit-qc0
+  sharing:
+    enabled: true
+    projects:
+    - name: feb-proj-1
+    - name: feb-proj-2
   resource:
     selector:
       name: aaa
