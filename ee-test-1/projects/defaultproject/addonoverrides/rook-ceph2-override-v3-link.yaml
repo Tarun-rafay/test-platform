@@ -1,0 +1,28 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: AddonOverride
+metadata:
+  annotations:
+    documentlink: https://rafaysystems.atlassian.net/wiki/spaces/~62397e9e866b810069e2f178/pages/2673148053/Workaround+-+override+resource+values+of+default+BP+add-ons+V2+V3+spec#1.-proxy-config-v3
+    key1: value1
+    key2: value2
+    key3: value3
+  labels:
+    key1: value1
+    key2: value2
+    key3: value3
+    rafay.dev/overrideScope: clusterLabels
+    rafay.dev/overrideType: valuesFile
+  name: rook-ceph2-override-v3-link
+  project: defaultproject
+spec:
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: nikhil-tb2
+  resource:
+    selector:
+      selector: rafay.dev/system=true,rafay.dev/component=rook-ceph
+    type: Addon
+  type: Helm
+  valuesPath:
+    name: file://rook-ceph2-override-v3-link/rook-ceph2-override-v3-link.yaml

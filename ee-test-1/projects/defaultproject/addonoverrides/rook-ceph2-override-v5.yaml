@@ -1,0 +1,26 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: AddonOverride
+metadata:
+  annotations:
+    key1: value1
+    key3: value3
+  labels:
+    key1: value1
+    key2: value2
+    key3: value3
+    rafay.dev/overrideScope: clusterLabels
+    rafay.dev/overrideType: valuesFile
+  name: rook-ceph2-override-v5
+  project: defaultproject
+spec:
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: nikhil-tb1
+  resource:
+    selector:
+      selector: rafay.dev/system=true,rafay.dev/component=rook-ceph
+    type: Addon
+  type: Helm
+  valuesPath:
+    name: file://rook-ceph2-override-v5/rook-ceph2-override-v5.yaml

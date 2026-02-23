@@ -1,0 +1,21 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: AddonOverride
+metadata:
+  labels:
+    rafay.dev/overrideScope: clusterLabels
+    rafay.dev/overrideType: manifestsFile
+  name: nginx-yaml
+  project: defaultproject
+spec:
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: automation-cluster-boot-onprem-rauto-1110
+  resource:
+    selector:
+      name: busybox-deployment
+      version: v1
+    type: Addon
+  type: Yaml
+  valuesPath:
+    name: file://nginx-yaml/nginx-yaml.yaml

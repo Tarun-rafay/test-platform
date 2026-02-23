@@ -1,0 +1,4 @@
+rook-ceph:
+  csi:
+    cephfsGrpcMetricsPort: "19091"
+    rbdGrpcMetricsPort: "19090"

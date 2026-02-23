@@ -1,0 +1,21 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: AddonOverride
+metadata:
+  labels:
+    rafay.dev/overrideScope: clusterLabels
+    rafay.dev/overrideType: manifestsFile
+  name: new-ovr5
+  project: defaultproject
+spec:
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: automation-cluster-boot-onprem-rauto-1110
+  resource:
+    selector:
+      name: v1
+      version: v2
+    type: Addon
+  type: Yaml
+  valuesPath:
+    name: file://new-ovr5/new-ovr5.yaml
