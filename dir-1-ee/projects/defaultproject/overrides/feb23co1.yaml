@@ -1,5 +1,5 @@
 apiVersion: infra.k8smgmt.io/v3
-kind: AddonOverride
+kind: Override
 metadata:
   labels:
     rafay.dev/overrideScope: clusterLabels
