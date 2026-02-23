@@ -8,7 +8,7 @@ metadata:
   project: defaultproject
 spec:
   resource:
-    type: Addon
+    type: Workload
   sharing:
     enabled: true
     projects:
