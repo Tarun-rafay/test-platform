@@ -22,3 +22,5 @@ spec:
       value: disneyc19
     - key: rafay.dev/clusterName
       value: disneyc2
+valuesPath:
+    name: file://override-test-env-clusters-2/override-test-env-clusters-2.yaml
