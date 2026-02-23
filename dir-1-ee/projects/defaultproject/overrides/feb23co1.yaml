@@ -1,0 +1,24 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: AddonOverride
+metadata:
+  labels:
+    rafay.dev/overrideScope: clusterLabels
+    rafay.dev/overrideType: valuesFile
+  name: feb23co1
+  project: defaultproject
+spec:
+  resource:
+    type: Addon
+  sharing:
+    enabled: true
+    projects:
+    - name: feb-proj-1
+    - name: feb-proj-2
+    - name: feb-proj-3
+  type: Helm
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: disneyc1
+    - key: rafay.dev/clusterName
+      value: disneyc2
