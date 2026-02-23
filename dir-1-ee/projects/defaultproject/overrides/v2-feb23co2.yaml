@@ -14,7 +14,7 @@ spec:
   resource:
     selector:
       name: a1
-    type: Addon
+    type: Workload
   type: Helm
   valuesPath:
     name: file://v1-feb23co1/v1-feb23co1.yaml
