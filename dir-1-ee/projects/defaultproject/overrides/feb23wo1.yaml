@@ -10,7 +10,7 @@ spec:
   placement:
     labels:
     - key: rafay.dev/clusterName
-      value: ankit-qc0
+      value: ankit-qc
   sharing:
     enabled: false
     projects:
