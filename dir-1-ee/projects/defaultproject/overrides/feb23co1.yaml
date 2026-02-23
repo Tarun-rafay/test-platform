@@ -1,4 +1,4 @@
-apiVersion: infra.k8smgmt.io/v3
+apiVersion: apps.k8smgmt.io/v3
 kind: Override
 metadata:
   labels:
