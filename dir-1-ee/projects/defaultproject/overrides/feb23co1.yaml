@@ -19,6 +19,6 @@ spec:
   placement:
     labels:
     - key: rafay.dev/clusterName
-      value: disneyc1
+      value: disneyc19
     - key: rafay.dev/clusterName
       value: disneyc2
