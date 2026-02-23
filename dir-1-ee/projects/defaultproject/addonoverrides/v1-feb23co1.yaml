@@ -7,6 +7,14 @@ metadata:
   name: v1-feb23co1
   project: defaultproject
 spec:
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: ankit-qc
   resource:
+    selector:
+      name: a1
     type: Addon
   type: Helm
+  valuesPath:
+    name: file://v1-feb23co1/v1-feb23co1.yaml
