@@ -18,9 +18,7 @@ spec:
   sharing:
     enabled: true
     projects:
-    - name: feb-proj-1
-    - name: feb-proj-2
-    - name: feb-proj-3
+    - name: '*'
   type: Helm
   valuesPath:
     name: file://disneyco1/disneyco1.yaml
