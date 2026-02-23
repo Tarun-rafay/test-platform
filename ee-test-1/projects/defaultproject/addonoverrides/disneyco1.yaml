@@ -9,14 +9,18 @@ metadata:
 spec:
   placement:
     labels:
-    - key: rafay.dev/clusterType
-      value: manual
-    - key: rafay.dev/projectName
-      value: defaultproject
+    - key: rafay.dev/clusterName
+      value: disneyc1
+    - key: rafay.dev/clusterName
+      value: disneyc2
   resource:
-    selector:
-      name: fluenttd
     type: Addon
+  sharing:
+    enabled: true
+    projects:
+    - name: feb-proj-1
+    - name: feb-proj-2
+    - name: feb-proj-3
   type: Helm
   valuesPath:
     name: file://disneyco1/disneyco1.yaml
