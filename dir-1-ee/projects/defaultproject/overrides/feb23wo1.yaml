@@ -10,7 +10,7 @@ spec:
   placement:
     labels:
     - key: rafay.dev/clusterName
-      value: ankit-qc
+      value: ankit-qc0
   resource:
     selector:
       name: aaa
