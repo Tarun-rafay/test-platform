@@ -7,6 +7,14 @@ metadata:
   name: ss1
   project: defaultproject
 spec:
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: amar-terraform-eks-testing-dnd-master-dynamic1
   resource:
+    selector:
+      name: w-d3
     type: Workload
   type: Helm
+  valuesPath:
+    name: file://ss1/ss1.yaml
