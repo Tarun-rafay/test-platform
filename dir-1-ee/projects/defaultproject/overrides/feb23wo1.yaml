@@ -12,7 +12,7 @@ spec:
     - key: rafay.dev/clusterName
       value: ankit-qc9
   sharing:
-    enabled: false
+    enabled: true
     projects:
     - name: feb-proj-1
     - name: feb-proj-2
