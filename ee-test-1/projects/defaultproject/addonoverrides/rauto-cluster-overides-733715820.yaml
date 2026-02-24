@@ -4,17 +4,22 @@ metadata:
   labels:
     rafay.dev/overrideScope: clusterLabels
     rafay.dev/overrideType: manifestsFile
-  name: rauto-cluster-overides-350039021
+  name: rauto-cluster-overides-733715820
   project: defaultproject
 spec:
   placement:
     labels:
     - key: rafay.dev/clusterName
       value: rauto-eks-153877059
+  repo:
+    path:
+      name: workloads/native_yaml/cluster_override_yaml/cluster_override_yaml_type.yaml
+    repository: rauto-git-repo
+    revision: master
   resource:
     selector:
-      name: addon-rauto-350039021
+      name: addon-rauto-733715820
     type: Addon
   type: Yaml
   valuesPath:
-    name: file://rauto-cluster-overides-350039021/rauto-cluster-overides-350039021.yaml
+    name: file://rauto-cluster-overides-733715820/rauto-cluster-overides-733715820.yaml
