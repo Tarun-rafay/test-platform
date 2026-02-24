@@ -34,7 +34,7 @@ metadata:
   labels:
     rafay.dev/overrideScope: clusterLabels
     rafay.dev/overrideType: valuesFile
-  name: rauto-override-v3-490764
+  name: rauto-override-v3-115567
   project: defaultproject
 spec:
   placement:
@@ -43,9 +43,9 @@ spec:
       value: automation-cluster-boot-eks-1225
   resource:
     selector:
-      name: rauto-addon-490764
+      name: rauto-addon-115567
       version: v3
     type: Addon
   type: Helm
   valuesPath:
-    name: file://rauto-override-v3-490764/rauto-override-v3-490764.yaml
+    name: file://rauto-override-v3-115567/rauto-override-v3-115567.yaml
