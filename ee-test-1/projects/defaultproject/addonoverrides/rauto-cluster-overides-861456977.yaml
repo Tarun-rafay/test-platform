@@ -1,0 +1,20 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: AddonOverride
+metadata:
+  labels:
+    rafay.dev/overrideScope: clusterLabels
+    rafay.dev/overrideType: valuesFile
+  name: rauto-cluster-overides-861456977
+  project: defaultproject
+spec:
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: rauto-eks-153877059
+  resource:
+    selector:
+      name: rauto-test-addon-861456977
+    type: Addon
+  type: Helm
+  valuesPath:
+    name: file://rauto-cluster-overides-861456977/rauto-cluster-overides-861456977.yaml
