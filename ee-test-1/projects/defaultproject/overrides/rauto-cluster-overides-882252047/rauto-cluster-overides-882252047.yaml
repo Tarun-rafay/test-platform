@@ -1,2 +1,1 @@
-ingress:
-  hostname: cluster-overide-testing.qasimplified.com
+replicaCount: 3
