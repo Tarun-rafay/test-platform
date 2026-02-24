@@ -13,7 +13,7 @@ spec:
       value: rauto-eks-153877059
   resource:
     selector:
-      name: rauto-test-addon-861456977
+      name: rauto-helm-test-addon-861456977
     type: Addon
   type: Helm
   valuesPath:
