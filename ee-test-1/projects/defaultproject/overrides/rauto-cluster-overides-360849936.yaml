@@ -1,0 +1,19 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Override
+metadata:
+  labels:
+    rafay.dev/overrideScope: clusterLabels
+    rafay.dev/overrideType: valuesFile
+  name: rauto-cluster-overides-360849936
+  project: defaultproject
+spec:
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: rauto-k3d-23315
+  resource:
+    selector:
+      name: rauto-workload-360849936
+    type: WorkloadSetting
+  valuesPath:
+    name: file://rauto-cluster-overides-360849936/rauto-cluster-overides-360849936.yaml
