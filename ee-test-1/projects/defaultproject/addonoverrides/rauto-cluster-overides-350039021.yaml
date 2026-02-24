@@ -13,7 +13,7 @@ spec:
       value: rauto-eks-153877059
   resource:
     selector:
-      name: rauto-test-addon-350039021
+      name: addon-rauto-350039021
     type: Addon
   type: Yaml
   valuesPath:
