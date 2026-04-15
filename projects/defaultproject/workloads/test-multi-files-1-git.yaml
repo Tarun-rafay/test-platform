@@ -5,6 +5,16 @@ metadata:
   project: defaultproject
 spec:
   artifact:
-    artifact: {}
+    artifact:
+      chartName: muti-file-path-test/busybox-chart-0.1.0.tgz
+      repository: rauto-helm-repo
+      valuesRef:
+        repository: test-platform
+        revision: main
+        valuesPaths:
+        - name: muti-file-path-test/values-pre-prod.yaml
+    options:
+      maxHistory: 10
+      timeout: 5m0s
     type: Helm
   namespace: apr7-ns
