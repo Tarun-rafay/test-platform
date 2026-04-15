@@ -14,7 +14,7 @@ spec:
       - {}
       valuesRef:
         repository: test-platform
-        revision: muti-file-path-test/values-dev.yaml
+        revision: main
         valuesPaths:
         - name: muti-file-path-test/values-pre-prod.yaml
         - name: muti-file-path-test/values-prod.yaml
@@ -26,4 +26,4 @@ spec:
   namespace: apr7-ns
   placement:
     selector: rafay.dev/clusterName=krishna-pipeline-test
-  version: test-multi-files-v4-202604151003350000
+  version: test-multi-files-v5-202604151005100000
