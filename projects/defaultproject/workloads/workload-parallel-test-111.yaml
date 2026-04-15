@@ -1,0 +1,14 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: workload-parallel-test-111
+  project: defaultproject
+spec:
+  artifact:
+    artifact: {}
+    type: Yaml
+  namespace: jun5-ns
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: krishna-sep19

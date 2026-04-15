@@ -1,0 +1,15 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: before-opa
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/before-opa/before-opa.yaml
+    type: Yaml
+  namespace: jul16-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-opa-upgrade-test
+  version: before-opa-v1-202507160921280000

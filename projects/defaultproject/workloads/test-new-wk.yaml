@@ -1,0 +1,15 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: test-new-wk
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/test-new-wk/test-new-wk.yaml
+    type: Yaml
+  namespace: new-ns-1
+  placement:
+    selector: rafay.dev/clusterName=krishna-mks-jul2
+  version: test-new-wk-v1-202507100859050000

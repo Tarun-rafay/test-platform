@@ -1,0 +1,22 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: wkload-busy-box-1
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: rctl/busybox-chart-0.1.0.tgz
+      repository: demo-github-repo
+      revision: main
+      valuesPaths:
+      - name: rctl/bussy-box-values.yaml
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: demo-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-demo-k3d
+  version: wkload-busy-box-1-v1-202603110711040000

@@ -1,0 +1,14 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: wkload-test-2
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/wkload-test-2/wkload-test-2.yaml
+    type: Yaml
+  namespace: opa-up-test-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-opa-upgrade-test

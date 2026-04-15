@@ -1,0 +1,13 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: sep17-test
+  project: defaultproject
+spec:
+  artifact:
+    artifact: {}
+    type: Yaml
+  namespace: jul22-ns
+  placement:
+    selector: rafay.dev/clusterName=sep1
+  version: sep17-test-v1-202509180705140000

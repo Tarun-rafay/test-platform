@@ -1,0 +1,14 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: krishna-test-mar613
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: file://artifacts/krishna-test-mar613/busybox-chart-0.1.0.tgz
+    type: Helm
+  namespace: string
+  placement:
+    selector: rafay.dev/clusterName=string

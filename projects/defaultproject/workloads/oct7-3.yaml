@@ -1,0 +1,14 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: oct7-3
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/oct7-3/oct7-3.yaml
+    type: Yaml
+  namespace: sep30-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-oct8-test

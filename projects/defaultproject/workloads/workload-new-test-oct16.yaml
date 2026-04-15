@@ -1,0 +1,17 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  annotations:
+    apps.k8smgmt.io/workload-description: A workload to yet test deploy busybox replica.
+    krishna.dev/created-by: krishna
+  name: workload-new-test-oct16
+  project: defaultproject
+spec:
+  artifact:
+    artifact: {}
+    type: Yaml
+  namespace: ns-1
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: krishna-nov6

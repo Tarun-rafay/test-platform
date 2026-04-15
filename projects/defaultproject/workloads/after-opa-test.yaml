@@ -1,0 +1,14 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: after-opa-test
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/after-opa-test/after-opa-test.yaml
+    type: Yaml
+  namespace: jul22-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-mks-opa

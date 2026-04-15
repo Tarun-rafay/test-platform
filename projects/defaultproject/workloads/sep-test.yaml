@@ -1,0 +1,14 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: sep-test
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/sep-test/sep-test.yaml
+    type: Yaml
+  namespace: jul22-ns
+  placement:
+    selector: rafay.dev/clusterName=sep1

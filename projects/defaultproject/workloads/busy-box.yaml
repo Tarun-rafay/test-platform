@@ -1,0 +1,14 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: busy-box
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/busy-box/busy-box.yaml
+    type: Yaml
+  namespace: feb25-ns
+  placement:
+    selector: rafay.dev/clusterName in (krishna-feb25-local,krishna-feb25-oci)

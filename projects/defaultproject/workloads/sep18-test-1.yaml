@@ -1,0 +1,12 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: sep18-test-1
+  project: defaultproject
+spec:
+  artifact:
+    artifact: {}
+    type: Yaml
+  namespace: krishna-sep18-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-sep18

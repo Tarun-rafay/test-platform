@@ -1,0 +1,15 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: krishna-test-feb2
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/before-opa/before-opa.yaml
+    type: Yaml
+  namespace: feb2-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-feb2-import
+  version: v1

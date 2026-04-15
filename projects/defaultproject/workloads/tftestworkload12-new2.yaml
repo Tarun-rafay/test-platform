@@ -1,0 +1,13 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: tftestworkload12-new2
+  project: defaultproject
+spec:
+  artifact:
+    artifact: {}
+    options: {}
+    type: Yaml
+  namespace: ns-1
+  placement:
+    selector: rafay.dev/clusterName=krishna-oct28

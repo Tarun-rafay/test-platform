@@ -1,0 +1,14 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: mar6-test122
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: file://artifacts/mar6-test122/busybox-chart-0.1.0.tgz
+    type: Helm
+  namespace: string
+  placement:
+    selector: rafay.dev/clusterName=string

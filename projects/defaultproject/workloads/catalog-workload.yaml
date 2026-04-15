@@ -1,0 +1,24 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: catalog-workload
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      catalog: rauto-catalog-946345908
+      chartName: hello-world
+      chartVersion: 0.1.0
+      valuesRef:
+        repository: rauto-git-repo
+        revision: master
+        valuesPaths:
+        - name: workloads/helm3/hello-world/hello-world-values.yaml
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: new-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-feb25-local
+  version: catalog-workload-v6-202602251143160000

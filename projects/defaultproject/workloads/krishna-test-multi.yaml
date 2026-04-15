@@ -1,0 +1,20 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: krishna-test-multi
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: rctl/busybox-chart-0.1.0.tgz
+      repository: krishna-repo
+      revision: main
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: apr7-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-pipeline-test
+  version: krishna-test-multi-v8-202604081123350000

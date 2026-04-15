@@ -1,0 +1,15 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: new-feb2-test
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/new-feb2-test/new-feb2-test.yaml
+    type: Yaml
+  namespace: feb2-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-feb2-test
+  version: new-feb2-test-v1-202602020914360000

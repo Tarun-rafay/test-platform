@@ -1,0 +1,14 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: nov-19-test
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/nov-19-test/nov-19-test.yaml
+    type: Yaml
+  namespace: nov19-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-nov19

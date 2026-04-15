@@ -1,0 +1,14 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: wrong-yaml
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/wrong-yaml/wrong-yaml.yaml
+    type: Yaml
+  namespace: krishna-ns-jul7
+  placement:
+    selector: rafay.dev/projectName=defaultproject,rafay.dev/clusterName in (krishna-mks-jul2,ankit-k3d)

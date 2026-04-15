@@ -1,0 +1,10 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: feb3-test
+  project: defaultproject
+spec:
+  artifact:
+    artifact: {}
+    type: Yaml
+  namespace: feb2-ns

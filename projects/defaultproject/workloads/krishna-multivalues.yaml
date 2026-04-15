@@ -1,0 +1,29 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: krishna-multivalues
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: rctl/busybox-chart-0.1.0.tgz
+      repository: krishna-repo
+      revision: main
+      valuesPaths:
+      - {}
+      valuesRef:
+        repository: krishna-test-repo
+        revision: main
+        valuesPaths:
+        - name: valueFiles/value-dev.yaml
+        - name: valueFiles/value-pre-prod.yaml
+        - name: valueFiles/value-prod.yaml
+        - name: valueFiles/value-multi.yaml
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: apr7-ns
+  placement:
+    selector: rafay.dev/clusterName in (krishan-dev-cluster,krishan-mar2-oci,krishna-apr1)

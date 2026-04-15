@@ -1,0 +1,16 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: krishna-weburl-test
+  project: defaultproject
+spec:
+  artifact:
+    artifact: {}
+    options: {}
+    type: Yaml
+  drift:
+    action: Deny
+    enabled: true
+  namespace: sep30-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-sep29

@@ -1,0 +1,18 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: krishna-mar12-test
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: file://artifacts/krishna-mar12-test/busybox-chart-0.1.0.tgz
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: string
+  placement:
+    selector: rafay.dev/clusterName=string
+  version: krishna-mar12-test-v1-202603120613090000

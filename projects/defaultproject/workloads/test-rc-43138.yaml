@@ -1,0 +1,26 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: test-rc-43138
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: 9.6.5
+      repository: krishna-test-repo
+      revision: main
+      valuesPaths:
+      - {}
+      valuesRef:
+        repository: krishna-repo
+        revision: main
+        valuesPaths:
+        - name: rctl/values.yaml
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: krishna-sep18-ns
+  placement:
+    selector: rafay.dev/clusterName=krishan-dev-cluster

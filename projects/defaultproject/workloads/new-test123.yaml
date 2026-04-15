@@ -1,0 +1,18 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: new-test123
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      catalog: default-helm
+      chartName: simple-nginx
+      chartVersion: 1.1.1
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: jul22-ns
+  placement:
+    selector: rafay.dev/clusterName=sep1

@@ -1,0 +1,26 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: nov12test
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: rctl/nginx-12.0.1.tgz
+      repository: krishna-repo
+      revision: main
+      valuesPaths:
+      - {}
+      valuesRef:
+        repository: krishna-test-repo
+        revision: main
+        valuesPaths:
+        - name: rctl/values.yaml
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: nov12-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-nov12

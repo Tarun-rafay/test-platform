@@ -1,0 +1,17 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: sep1-test-repo
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: rctl/bussybox.yaml
+      repository: krishna-repo
+      revision: main
+    type: Yaml
+  namespace: jul22-ns
+  placement:
+    selector: rafay.dev/clusterName=sep1
+  version: sep1-test-repo-v1-202509020828530000

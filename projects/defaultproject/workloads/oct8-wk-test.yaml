@@ -1,0 +1,13 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: oct8-wk-test
+  project: defaultproject
+spec:
+  artifact:
+    artifact: {}
+    type: Yaml
+  namespace: oct8-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-oct8-test
+  version: oct8-wk-test-v4-202510081104350000

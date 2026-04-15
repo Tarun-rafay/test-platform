@@ -1,0 +1,24 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: test-feb23
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      catalog: default-helm
+      chartName: simple-nginx
+      chartVersion: 1.1.1
+      valuesRef:
+        repository: krishna-repo
+        revision: main
+        valuesPaths:
+        - name: rctl/values.yaml
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: krishna-feb10-namespace
+  placement:
+    selector: rafay.dev/clusterName=krishna-feb20-kubectl
+  version: test-feb23-v1-202602231143070000

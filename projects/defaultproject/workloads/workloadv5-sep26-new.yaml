@@ -1,0 +1,12 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: workloadv5-sep26-new
+  project: defaultproject
+spec:
+  artifact:
+    artifact: {}
+    type: Yaml
+  namespace: krishna-ns-sep24
+  placement:
+    selector: rafay.dev/clusterName=krishna-sep24
