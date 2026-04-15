@@ -1,0 +1,22 @@
+environment: stage
+
+replicaCount: 8
+
+image:
+  repository: nginx
+  pullPolicy: IfNotPresent
+  tag: "1.26"
+
+resources:
+  limits:
+    cpu: 800m
+    memory: 768Mi
+  requests:
+    cpu: 400m
+    memory: 384Mi
+
+autoscaling:
+  enabled: true
+  minReplicas: 6
+  maxReplicas: 30
+  targetCPUUtilizationPercentage: 65
