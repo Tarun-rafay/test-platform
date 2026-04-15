@@ -22,3 +22,5 @@ spec:
       timeout: 5m0s
     type: Helm
   namespace: apr7-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-pipeline-test
