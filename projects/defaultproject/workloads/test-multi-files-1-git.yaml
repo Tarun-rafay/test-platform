@@ -6,8 +6,8 @@ metadata:
 spec:
   artifact:
     artifact:
-      chartName: some-chart
-      chartVersion: 1.2.3
+      chartName: hello-world
+      chartVersion: v2
       repository: default-stable-helm
       valuesRef:
         repository: test-platform
@@ -21,4 +21,4 @@ spec:
   namespace: apr7-ns
   placement:
     selector: rafay.dev/clusterName=krishna-pipeline-test
-  version: test-multi-files-1-git-v5-202604151031240000
+  version: test-multi-files-1-git-v6-202604151034170000
