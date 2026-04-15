@@ -14,6 +14,7 @@ spec:
         revision: main
         valuesPaths:
         - name: muti-file-path-test/values-prod.yaml
+        - name: muti-file-path-test/stage.yaml
     options:
       maxHistory: 10
       timeout: 5m0s
@@ -21,4 +22,4 @@ spec:
   namespace: apr7-ns
   placement:
     selector: rafay.dev/clusterName=krishna-pipeline-test
-  version: test-multi-files-1-git-v10-202604151053270000
+  version: test-multi-files-1-git-v11-202604151056300000
