@@ -7,7 +7,7 @@ spec:
   artifact:
     artifact:
       chartName: hello-world
-      chartVersion: v2
+      chartVersion: 0.1.0
       repository: rauto-helm-repo
       valuesRef:
         repository: test-platform
@@ -21,4 +21,4 @@ spec:
   namespace: apr7-ns
   placement:
     selector: rafay.dev/clusterName=krishna-pipeline-test
-  version: test-multi-files-1-git-v9-202604151052290000
+  version: test-multi-files-1-git-v10-202604151053270000
