@@ -24,3 +24,4 @@ spec:
   namespace: apr7-ns
   placement:
     selector: rafay.dev/clusterName=krishna-pipeline-test
+  version: test-multi-files-v1-202604150721330000
