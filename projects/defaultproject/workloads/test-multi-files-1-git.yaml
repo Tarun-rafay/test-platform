@@ -6,8 +6,9 @@ metadata:
 spec:
   artifact:
     artifact:
-      chartName: muti-file-path-test/busybox-chart-0.1.0.tgz
-      repository: rauto-helm-repo
+      chartName: hello world
+      chartVersion: v1
+      repository: default-stable-helm
       valuesRef:
         repository: test-platform
         revision: main
@@ -20,4 +21,4 @@ spec:
   namespace: apr7-ns
   placement:
     selector: rafay.dev/clusterName=krishna-pipeline-test
-  version: test-multi-files-1-git-v1-202604151024020000
+  version: test-multi-files-1-git-v2-202604151027190000
