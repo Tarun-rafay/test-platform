@@ -23,4 +23,4 @@ spec:
     labels:
     - key: rafay.dev/clusterName
       value: krishna-nov11
-  version: testworkload4-test-1-v2-202604200645480000
+  version: testworkload4-test-1-v3-202604200646020000
