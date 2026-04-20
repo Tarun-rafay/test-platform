@@ -1,0 +1,26 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: testworkload4-test-1
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: rctl/busybox-chart-0.1.0.tgz
+      repository: krishna-repo
+      revision: main
+      valuesRef:
+        repository: krishna-test-repo
+        revision: main
+        valuesPaths:
+        - name: valueFiles/bussy-box-qc-value.yaml
+        - name: valueFiles/bussy-box-preview-value.yaml
+        - name: valueFiles/bussy-box-prod-value.yaml
+    type: Helm
+  namespace: ns-1
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: krishna-nov11
+  version: v1
