@@ -1,0 +1,26 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: tarun-mulfiles-test-1
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: muti-file-path-test/busybox-chart-0.1.0.tgz
+      repository: test-platform
+      revision: main
+      valuesRef:
+        repository: test-platform
+        revision: main
+        valuesPaths:
+        - name: muti-file-path-test/values-prod.yaml
+        - name: muti-file-path-test/stage.yaml
+        - name: muti-file-path-test/values-dev.yaml
+    type: Helm
+  namespace: ns-1
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: krishna-pipeline-test
+  version: v1
