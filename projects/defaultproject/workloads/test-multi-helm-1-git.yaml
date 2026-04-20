@@ -50,4 +50,4 @@ spec:
   namespace: apr7-ns
   placement:
     selector: rafay.dev/clusterName=krishna-pipeline-test
-  version: v14
+  version: test-multi-helm-1-git-v2-202604200913160000
