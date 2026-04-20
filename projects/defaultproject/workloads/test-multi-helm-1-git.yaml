@@ -1,0 +1,53 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: test-multi-helm-1-git
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      chartName: hello-world
+      chartVersion: 0.1.0
+      repository: rauto-helm-repo
+      valuesRef:
+        repository: test-platform
+        revision: main
+        valuesPaths:
+        - name: muti-file-path-test/multi-file-1.yaml
+        - name: muti-file-path-test/multi-file-2.yaml
+        - name: muti-file-path-test/multi-file-3.yaml
+        - name: muti-file-path-test/multi-file-4.yaml
+        - name: muti-file-path-test/multi-file-5.yaml
+        - name: muti-file-path-test/multi-file-6.yaml
+        - name: muti-file-path-test/multi-file-7.yaml
+        - name: muti-file-path-test/multi-file-8.yaml
+        - name: muti-file-path-test/multi-file-9.yaml
+        - name: muti-file-path-test/multi-file-10.yaml
+        - name: muti-file-path-test/multi-file-11.yaml
+        - name: muti-file-path-test/multi-file-12.yaml
+        - name: muti-file-path-test/multi-file-13.yaml
+        - name: muti-file-path-test/multi-file-14.yaml
+        - name: muti-file-path-test/multi-file-15.yaml
+        - name: muti-file-path-test/multi-file-16.yaml
+        - name: muti-file-path-test/multi-file-17.yaml
+        - name: muti-file-path-test/multi-file-18.yaml
+        - name: muti-file-path-test/multi-file-19.yaml
+        - name: muti-file-path-test/multi-file-20.yaml
+        - name: muti-file-path-test/multi-file-21.yaml
+        - name: muti-file-path-test/multi-file-22.yaml
+        - name: muti-file-path-test/multi-file-23.yaml
+        - name: muti-file-path-test/multi-file-24.yaml
+        - name: muti-file-path-test/multi-file-25.yaml
+        - name: muti-file-path-test/multi-file-26.yaml
+        - name: muti-file-path-test/multi-file-27.yaml
+        - name: muti-file-path-test/multi-file-28.yaml
+        - name: muti-file-path-test/multi-file-29.yaml
+        - name: muti-file-path-test/multi-file-30.yaml
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: apr7-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-pipeline-test
+  version: v14
