@@ -5,6 +5,31 @@ metadata:
   project: defaultproject
 spec:
   artifact:
-    artifact: {}
+    artifact:
+      chartPath: {}
+      repository: test-platform
+      revision: main
+      valuesPaths:
+      - name: muti-file-path-test/multi-file-1.yaml
+      - name: muti-file-path-test/multi-file-2.yaml
+      - name: muti-file-path-test/multi-file-3.yaml
+      - name: muti-file-path-test/multi-file-4.yaml
+      - name: muti-file-path-test/multi-file-5.yaml
+      - name: muti-file-path-test/multi-file-6.yaml
+      - name: muti-file-path-test/multi-file-7.yaml
+      - name: muti-file-path-test/multi-file-8.yaml
+      - name: muti-file-path-test/multi-file-9.yaml
+      - name: muti-file-path-test/multi-file-10.yaml
+      - name: muti-file-path-test/multi-file-21.yaml
+      - name: muti-file-path-test/multi-file-22.yaml
+      - name: muti-file-path-test/multi-file-23.yaml
+      - name: muti-file-path-test/multi-file-24.yaml
+      - name: muti-file-path-test/multi-file-25.yaml
+      - name: muti-file-path-test/multi-file-26.yaml
+      - name: muti-file-path-test/multi-file-27.yaml
+      - name: muti-file-path-test/multi-file-28.yaml
+    options:
+      maxHistory: 10
+      timeout: 5m0s
     type: Helm
   namespace: apr7-ns
