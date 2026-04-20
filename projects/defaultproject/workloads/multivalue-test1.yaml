@@ -23,4 +23,4 @@ spec:
     labels:
     - key: rafay.dev/clusterName
       value: krishna-pipeline-test
-  version: v1
+  version: multivalue-test1-v2-202604200721530000
