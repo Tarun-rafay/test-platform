@@ -12,4 +12,4 @@ spec:
   namespace: feb2-ns
   placement:
     selector: rafay.dev/clusterName=krishna-feb2-test
-  version: v1
+  version: krishna-feb2new-test-2-v2-202604200646300000
