@@ -6,7 +6,8 @@ metadata:
 spec:
   artifact:
     artifact:
-      chartPath: {}
+      chartPath:
+        name: muti-file-path-test/busybox-chart-0.1.0.tgz
       repository: test-platform
       revision: main
       valuesPaths:
@@ -35,4 +36,4 @@ spec:
   namespace: apr7-ns
   placement:
     selector: rafay.dev/clusterName=krishna-pipeline-test
-  version: test-multi-fl-2-v1-202604201000570000
+  version: test-multi-fl-2-v2-202604201002220000
