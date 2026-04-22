@@ -1,0 +1,24 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: test-multi-fl-2-tf
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: muti-file-path-test/busybox-chart-0.1.0.tgz
+      repository: test-platform
+      revision: main
+      valuesPaths:
+      - name: muti-file-path-test/multi-file-1.yaml
+      - name: muti-file-path-test/multi-file-2.yaml
+      - name: muti-file-path-test/multi-file-3.yaml
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: apr7-ns
+  placement:
+    selector: rafay.dev/clusterName=krishna-pipeline-test
+  version: test-multi-fl-2-v2
